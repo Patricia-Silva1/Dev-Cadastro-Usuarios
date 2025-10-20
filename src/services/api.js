@@ -1,8 +1,8 @@
+// src/services/api.js
 import axios from "axios";
 
-// Substitua esta URL pela URL pública do seu backend hospedado
 const api = axios.create({
-  baseURL: "https://seu-backend-hospedado.com", // Exemplo: https://cadastro-api.onrender.com
+  baseURL: "http://localhost:3001", // Certifique-se de que o backend está rodando nessa porta
   headers: {
     "Content-Type": "application/json"
   }
