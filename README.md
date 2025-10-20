@@ -65,4 +65,5 @@ O **frontend** consome a API REST do **backend** usando Axios. A comunicação �
 
 Desenvolvido com 💙 por **Patricia Silva**  
 🔗 [GitHub](https://github.com/Patricia-Silva1)
+link do projeto 🔗 [Projeto](https://dev-cadastro-usuarios-pi.vercel.app/)
 
