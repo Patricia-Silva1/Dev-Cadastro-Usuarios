@@ -1,16 +1,68 @@
-# React + Vite
+# 👥 **Gerenciador de Usuários**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto **fullstack** desenvolvido por **Patricia Silva**, que permite **cadastrar, listar, editar e excluir usuários**. Ele integra um **backend com Node.js, Express, Prisma e MongoDB** com um **frontend em React + Vite**, oferecendo uma experiência completa e responsiva.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 **Objetivo do Projeto**
 
-## React Compiler
+Criar uma aplicação funcional e moderna que simula um painel administrativo de usuários, aplicando boas práticas de desenvolvimento, integração entre tecnologias e foco na experiência do usuário.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🚀 **Tecnologias Utilizadas**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🔧 **Backend**
+- **Node.js**
+- **Express**
+- **Prisma ORM**
+- **MongoDB**
+- **CORS**
+- **Dotenv**
+
+### 🎨 **Frontend**
+- **React**
+- **Vite**
+- **Axios**
+- **React Router DOM**
+- **Styled-components**
+- **Context API**
+
+---
+## 📌 Funcionalidades
+
+- ✅ **Cadastro de usuários** com validação de campos obrigatórios
+- 📋 **Listagem de usuários** em tabela responsiva
+- ✏️ **Edição de dados** com formulário dinâmico
+- ❌ **Exclusão de usuários** com confirmação
+- 🔍 **Busca por nome** para filtrar resultados
+- 📱 **Interface responsiva** para desktop e mobile
+- 🔄 **Integração com API REST** usando Axios
+- 🧠 **Gerenciamento de estado global** com Context API
+
+---
+
+## 🔗 Integração entre Frontend e Backend
+
+O **frontend** consome a API REST do **backend** usando Axios. A comunicação é feita via JSON, e o projeto pode ser rodado localmente ou implantado em serviços como:
+
+- **Netlify** ou **Vercel** para o frontend
+- **Railway**, **Render** ou **MongoDB Atlas** para o backend
+
+---
+
+## 💡 Diferenciais
+
+- 🎨 Interface moderna e intuitiva
+- 🧱 Código organizado em componentes reutilizáveis
+- 🧭 Navegação com React Router DOM
+- 🧩 Backend escalável com Prisma e MongoDB
+- 🛠️ Código limpo, comentado e fácil de manter
+
+---
+
+## 🙋‍♀️ Autora
+
+Desenvolvido com 💙 por **Patricia Silva**  
+🔗 [GitHub](https://github.com/Patricia-Silva1)
+
