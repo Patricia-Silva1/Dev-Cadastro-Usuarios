@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:3001", // Certifique-se de que o backend está rodando nessa porta
+  baseURL: "https://cadastro-api-dr5y.onrender.com", // Backend hospedado no Render
   headers: {
     "Content-Type": "application/json"
   }
