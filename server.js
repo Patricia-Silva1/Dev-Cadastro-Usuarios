@@ -123,5 +123,6 @@ app.delete('/usuarios/:id', async (req, res) => {
 
 // ✅ Inicialização do servidor
 app.listen(3001, () => {
-  console.log('🚀 Servidor rodando na porta 3001');
+  console.log('🚀 Servidor rodando na porta https://cadastro-api-dr5y.onrender.com/usuarios');
+
 });
