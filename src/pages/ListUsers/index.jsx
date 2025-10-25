@@ -15,6 +15,7 @@ import {
 
 function ListUsers() {
   const [users, setUsers] = useState([]);
+  const [loading, setLoading] = useState(true); // para mostrar carregamento
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -24,7 +25,9 @@ function ListUsers() {
         setUsers(data);
       } catch (error) {
         console.error("Erro ao buscar usuários:", error);
-        alert("Erro ao carregar usuários.");
+        alert(`Erro ao carregar usuários: ${error.response?.data?.error || error.message}`);
+      } finally {
+        setLoading(false);
       }
     }
     getUsers();
@@ -37,10 +40,15 @@ function ListUsers() {
     try {
       await api.delete(`/usuarios/${id}`);
       setUsers((prevUsers) => prevUsers.filter((user) => user.id !== id));
+      alert("Usuário excluído com sucesso!");
     } catch (error) {
       console.error("Erro ao deletar usuário:", error);
-      alert("Erro ao deletar usuário.");
+      alert(`Erro ao deletar usuário: ${error.response?.data?.error || error.message}`);
     }
+  }
+
+  if (loading) {
+    return <p style={{ textAlign: 'center', marginTop: '2rem' }}>Carregando usuários...</p>;
   }
 
   return (
